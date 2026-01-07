@@ -69,6 +69,7 @@
                     <i class="ri-arrow-right-line"></i>
                 </button>
             </div>
+
             <div id="hs-navbar-alignment"
                 class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2"
                 aria-labelledby="hs-navbar-alignment-collapse">
@@ -103,10 +104,11 @@
 
                     <!-- Filter 1 -->
                     <select class="select w-full sm:w-[150px] h-[50px] px-5 rounded-3xl border border-gray-200 ">
-                        <option disabled selected>Pick a color</option>
-                        <option>Crimson</option>
-                        <option>Amber</option>
-                        <option>Velvet</option>
+                        <option disabled selected>Category</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="Truck">Truck</option>
+                        <option value="Coupe">Coupe</option>
                     </select>
 
                     <!-- Separator -->
@@ -114,10 +116,10 @@
 
                     <!-- Filter 2 -->
                     <select class="select w-full sm:w-[150px] h-[50px] px-5 rounded-3xl border border-gray-200">
-                        <option disabled selected>Pick a color</option>
-                        <option>Crimson</option>
-                        <option>Amber</option>
-                        <option>Velvet</option>
+                        <option disabled selected>Color</option>
+                        <option value="Black">Black</option>
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
                     </select>
 
                     <!-- Separator -->
@@ -125,17 +127,17 @@
 
                     <!-- Filter 3 -->
                     <select class="select w-full sm:w-[150px] h-[50px] px-5 rounded-3xl border border-gray-200">
-                        <option disabled selected>Pick a color</option>
-                        <option>Crimson</option>
-                        <option>Amber</option>
-                        <option>Velvet</option>
+                        <option disabled selected>Price</option>
+                        <option value="0-50">0 - 50</option>
+                        <option value="51-100">51 - 100</option>
+                        <option value="101-150">101 - 150</option>
                     </select>
 
                     <!-- Separator -->
                     <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
 
                     <!-- Search Button -->
-                    <button type="button"
+                    <button id="searchBtn"  type="button"
                         class="w-full sm:w-[150px] py-3 px-5 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-3xl bg-blue-600 text-white hover:bg-blue-700 transition-colors">
                         Search Cars
                         <i class="ri-search-line text-md"></i>

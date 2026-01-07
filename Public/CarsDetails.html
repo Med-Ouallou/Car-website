@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details - Vehicle Reservation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white border-b border-gray-200">
+        <div class="max-w-[85rem] w-full mx-auto px-4 py-4 flex flex-wrap basis-full items-center justify-between">
+            <a class="sm:order-1 flex-none text-xl font-semibold focus:outline-hidden focus:opacity-80" href="#">Brand</a>
+            <div class="sm:order-3 flex items-center gap-x-2">
+                <button type="button"
+                    class="sm:hidden hs-collapse-toggle relative size-9 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50">
+                    <i class="ri-menu-line text-xl"></i>
+                </button>
+                <button type="button"
+                    class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-3xl border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 transition-colors">
+                    Signup free
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+            </div>
+            <div class="hidden sm:flex sm:order-2 flex-row gap-5 items-center">
+                <a class="font-medium text-gray-600 hover:text-gray-400" href="#">Landing</a>
+                <a class="font-medium text-gray-600 hover:text-gray-400" href="#">Account</a>
+                <a class="font-medium text-blue-500" href="#">Cars</a>
+                <a class="font-medium text-gray-600 hover:text-gray-400" href="#">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-[85rem] mx-auto px-4 py-8">
+        
+        <!-- Breadcrumb -->
+        <nav class="flex mb-8" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                    <a href="#" class="text-gray-600 hover:text-blue-600">
+                        <i class="ri-home-line mr-2"></i>Home
+                    </a>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <i class="ri-arrow-right-s-line text-gray-400"></i>
+                        <a href="#" class="ml-1 text-gray-600 hover:text-blue-600">Cars</a>
+                    </div>
+                </li>
+                <li aria-current="page">
+                    <div class="flex items-center">
+                        <i class="ri-arrow-right-s-line text-gray-400"></i>
+                        <span class="ml-1 text-gray-500">BMW 5 Series</span>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+
+        <!-- Product Details Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            
+            <!-- Image Gallery -->
+            <div class="space-y-4">
+                <!-- Main Image -->
+                <div class="bg-white rounded-2xl p-4 shadow-sm">
+                    <img src="/images/1758190789620-btjlmn.webp" alt="BMW 5 Series" class="w-full h-96 object-cover rounded-xl">
+                </div>
+                
+                <!-- Thumbnail Images -->
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="bg-white rounded-xl p-2 shadow-sm cursor-pointer hover:ring-2 hover:ring-blue-500">
+                        <img src="/images/1758190789620-btjlmn.webp" alt="Thumbnail 1" class="w-full h-20 object-cover rounded-lg">
+                    </div>
+                    <div class="bg-white rounded-xl p-2 shadow-sm cursor-pointer hover:ring-2 hover:ring-blue-500">
+                        <img src="/images/1758660304124-6m7j1d.webp" alt="Thumbnail 2" class="w-full h-20 object-cover rounded-lg">
+                    </div>
+                    <div class="bg-white rounded-xl p-2 shadow-sm cursor-pointer hover:ring-2 hover:ring-blue-500">
+                        <img src="/images/1763311892646-axub89.webp" alt="Thumbnail 3" class="w-full h-20 object-cover rounded-lg">
+                    </div>
+                    <div class="bg-white rounded-xl p-2 shadow-sm cursor-pointer hover:ring-2 hover:ring-blue-500">
+                        <img src="/images/1758190789620-btjlmn.webp" alt="Thumbnail 4" class="w-full h-20 object-cover rounded-lg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="space-y-6">
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <!-- Title & Rating -->
+                    <div class="mb-4">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-full">Luxury</span>
+                            <span class="bg-green-100 text-green-600 text-xs font-medium px-3 py-1 rounded-full">Available</span>
+                        </div>
+                        <h1 class="text-3xl font-bold text-gray-900 mb-2">BMW 5 Series 2024</h1>
+                        <div class="flex items-center gap-2">
+                            <div class="flex text-yellow-400">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm">(4.5) 128 Reviews</span>
+                        </div>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="mb-6 pb-6 border-b border-gray-200">
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-4xl font-bold text-blue-600">$120</span>
+                            <span class="text-gray-600">/day</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-1">Weekly rates available - Contact us for details</p>
+                    </div>
+
+                    <!-- Specifications -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Specifications</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                                <i class="ri-dashboard-line text-2xl text-blue-600"></i>
+                                <div>
+                                    <p class="text-xs text-gray-500">Speed</p>
+                                    <p class="font-semibold text-gray-900">250 km/h</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                                <i class="ri-user-line text-2xl text-blue-600"></i>
+                                <div>
+                                    <p class="text-xs text-gray-500">Capacity</p>
+                                    <p class="font-semibold text-gray-900">5 People</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                                <i class="ri-settings-line text-2xl text-blue-600"></i>
+                                <div>
+                                    <p class="text-xs text-gray-500">Transmission</p>
+                                    <p class="font-semibold text-gray-900">Automatic</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                                <i class="ri-gas-station-line text-2xl text-blue-600"></i>
+                                <div>
+                                    <p class="text-xs text-gray-500">Fuel</p>
+                                    <p class="font-semibold text-gray-900">Gasoline</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Booking Section -->
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Pick-up Date</label>
+                                <input type="date" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Return Date</label>
+                                <input type="date" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                        </div>
+                        
+                        <button type="button"
+                            class="w-full py-4 px-6 inline-flex items-center justify-center gap-x-2 text-sm font-semibold rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition-colors">
+                            <i class="ri-shopping-cart-line text-lg"></i>
+                            Reserve Now
+                        </button>
+
+                        <button type="button"
+                            class="w-full py-4 px-6 inline-flex items-center justify-center gap-x-2 text-sm font-semibold rounded-xl border-2 border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors">
+                            <i class="ri-heart-line text-lg"></i>
+                            Add to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs Section -->
+        <div class="bg-white rounded-2xl shadow-sm mb-8">
+            <!-- Tab Navigation -->
+            <div class="border-b border-gray-200">
+                <nav class="flex gap-x-8 px-6" aria-label="Tabs">
+                    <button type="button"
+                        class="py-4 px-1 inline-flex items-center gap-x-2 border-b-2 border-blue-600 text-sm font-semibold text-blue-600">
+                        Description
+                    </button>
+                    <button type="button"
+                        class="py-4 px-1 inline-flex items-center gap-x-2 border-b-2 border-transparent text-sm text-gray-500 hover:text-blue-600">
+                        Features
+                    </button>
+                    <button type="button"
+                        class="py-4 px-1 inline-flex items-center gap-x-2 border-b-2 border-transparent text-sm text-gray-500 hover:text-blue-600">
+                        Reviews
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="p-6">
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-gray-900">About this car</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        The BMW 5 Series represents the perfect blend of luxury, performance, and cutting-edge technology. 
+                        This executive sedan offers a refined driving experience with its powerful engine, smooth handling, 
+                        and spacious interior designed with premium materials throughout.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Experience the thrill of driving a luxury vehicle equipped with advanced safety features, 
+                        intuitive infotainment system, and comfortable seating for up to 5 passengers. Perfect for 
+                        business trips, special occasions, or simply enjoying a premium driving experience.
+                    </p>
+                    
+                    <!-- Features List -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                        <div class="flex items-start gap-3">
+                            <i class="ri-checkbox-circle-fill text-green-500 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Premium Comfort</h4>
+                                <p class="text-sm text-gray-600">Leather seats with heating and ventilation</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="ri-checkbox-circle-fill text-green-500 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Advanced Safety</h4>
+                                <p class="text-sm text-gray-600">Lane assist, adaptive cruise control, blind spot monitoring</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="ri-checkbox-circle-fill text-green-500 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Entertainment System</h4>
+                                <p class="text-sm text-gray-600">Premium sound system, Apple CarPlay, Android Auto</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="ri-checkbox-circle-fill text-green-500 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Climate Control</h4>
+                                <p class="text-sm text-gray-600">Dual-zone automatic climate control</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Similar Cars -->
+        <section>
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Similar Cars</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Car Card 1 -->
+                <div class="bg-white border border-gray-200 shadow-sm rounded-xl hover:shadow-lg transition">
+                    <img class="w-full h-48 object-cover rounded-t-xl" src="/images/1758660304124-6m7j1d.webp" alt="Car">
+                    <div class="p-4">
+                        <h4 class="text-lg font-bold text-gray-800">Audi A6 2024</h4>
+                        <p class="text-sm text-gray-500 mt-1">Luxury • Automatic</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-2xl font-bold text-blue-600">$110/day</span>
+                            <button class="py-2 px-4 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 2 -->
+                <div class="bg-white border border-gray-200 shadow-sm rounded-xl hover:shadow-lg transition">
+                    <img class="w-full h-48 object-cover rounded-t-xl" src="/images/1763311892646-axub89.webp" alt="Car">
+                    <div class="p-4">
+                        <h4 class="text-lg font-bold text-gray-800">Mercedes E-Class</h4>
+                        <p class="text-sm text-gray-500 mt-1">Luxury • Automatic</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-2xl font-bold text-blue-600">$125/day</span>
+                            <button class="py-2 px-4 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 3 -->
+                <div class="bg-white border border-gray-200 shadow-sm rounded-xl hover:shadow-lg transition">
+                    <img class="w-full h-48 object-cover rounded-t-xl" src="/images/1758190789620-btjlmn.webp" alt="Car">
+                    <div class="p-4">
+                        <h4 class="text-lg font-bold text-gray-800">Lexus ES 2024</h4>
+                        <p class="text-sm text-gray-500 mt-1">Luxury • Automatic</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-2xl font-bold text-blue-600">$105/day</span>
+                            <button class="py-2 px-4 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-16">
+        <div class="max-w-[85rem] mx-auto px-4 py-10 text-center">
+            <p class="font-bold text-lg mb-2">ACME Industries Ltd.</p>
+            <p class="text-gray-400 text-sm">Copyright © 2025 - All right reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
