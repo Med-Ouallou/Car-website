@@ -60,4 +60,5 @@ function renderCars(carsArray) {
     });
 }
 
+
 renderCars(cars);
